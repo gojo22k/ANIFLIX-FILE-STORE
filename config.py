@@ -15,7 +15,7 @@ def is_enabled(value, default):
 # Bot Information
 API_ID = int(environ.get("API_ID", "25198711"))
 API_HASH = environ.get("API_HASH", "2a99a1375e26295626c04b4606f72752")
-BOT_TOKEN = environ.get("BOT_TOKEN", "7754653939:AAFVaBD-Yfwu2Gxst6q38Cfw1aPbGO9JMvE")
+BOT_TOKEN = environ.get("BOT_TOKEN", "6805479142:AAG_tNhfZVD2ROERlyoLAM4hpkvFJgdmpkY")
 AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002099692683 -1002221437806').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
      
 PICS = (environ.get('PICS', 'https://envs.sh/nL2.jpg https://envs.sh/nRe.jpg https://envs.sh/nRi.jpg https://envs.sh/nRu.jpeg https://envs.sh/nRP.jpg https://envs.sh/nRw.jpg')).split() # Bot Start Picture
