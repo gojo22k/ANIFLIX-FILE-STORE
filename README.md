@@ -76,7 +76,7 @@
 
 <b><details><summary>Tap On Me For See Credit</summary>
 
-💝 Credit Goes To [ANIFLIX](https://telegram.me/ANIFLIX_OFFICIAL)
+💝 Credit Goes To [ANKIT](https://telegram.me/ANIFLIX_OFFICIAL)
 
 🖍️ This Code Is Fully Written Or Coded And Public By [ANIFLIX](https://telegram.me/ANIFLIX_OFFICIAL) So Don't Forgot To Give Credit
 
