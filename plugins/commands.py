@@ -239,14 +239,14 @@ async def start(client, message):
             await asyncio.sleep(1) 
         await sts.delete()
         if AUTO_DELETE_MODE == True:
-            k = await client.send_message(chat_id=message.from_user.id, text="<b>🚨💣 ALERT: SELF-DESTRUCT TIMER ACTIVATED! 💣🚨</b>\n\n<b>⏳ The countdown has begun: you have just <u>{AUTO_DELETE} minutes</u> left!</b>\n\nThis Movie File/Video is set to vanish into the abyss, 🔒 DESTROYED <i>due to Copyright Issues</i> 🔒.\n\n<b>🔔 Don’t wait! Forward this message to your loved ones or secure it in your Saved Messages… before it’s too late! 🔔</b>")
+            k = await client.send_message(chat_id=message.from_user.id, text=f"<b>🚨💣 ALERT: SELF-DESTRUCT TIMER ACTIVATED! 💣🚨</b>\n\n<b>⏳ The countdown has begun: you have just {AUTO_DELETE} minutes left!</b>\n\nThis Movie File/Video is set to vanish into the abyss, 🔒 DESTROYED <i>due to Copyright Issues</i> 🔒.\n\n<b>🔔 Don’t wait! Forward this message to your loved ones or secure it in your Saved Messages… before it’s too late! 🔔</b>")
             await asyncio.sleep(AUTO_DELETE_TIME)
             for x in filesarr:
                 try:
                     await x.delete()
                 except:
                     pass
-            await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
+            await k.edit_text("<b>Your All Files/Videos is successfully sent to abyss!!!</b>")
         return
         
     files_ = await get_file_details(file_id)           
