@@ -239,7 +239,7 @@ async def start(client, message):
             await asyncio.sleep(1) 
         await sts.delete()
         if AUTO_DELETE_MODE == True:
-            k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</b>")
+            k = await client.send_message(chat_id=message.from_user.id, text="<b>🚨💣 ALERT: SELF-DESTRUCT TIMER ACTIVATED! 💣🚨</b>\n\n<b>⏳ The countdown has begun: you have just <u>{AUTO_DELETE} minutes</u> left!</b>\n\nThis Movie File/Video is set to vanish into the abyss, 🔒 DESTROYED <i>due to Copyright Issues</i> 🔒.\n\n<b>🔔 Don’t wait! Forward this message to your loved ones or secure it in your Saved Messages… before it’s too late! 🔔</b>")
             await asyncio.sleep(AUTO_DELETE_TIME)
             for x in filesarr:
                 try:
