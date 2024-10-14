@@ -21,7 +21,7 @@ AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('
 PICS = (environ.get('PICS', 'https://envs.sh/nL2.jpg https://envs.sh/nRe.jpg https://envs.sh/nRi.jpg https://envs.sh/nRu.jpeg https://envs.sh/nRP.jpg https://envs.sh/nRw.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1740287480 5192808332').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "FileStoreRooBot") # without @
-PORT = environ.get("PORT", "8080")
+PORT = environ.get("PORT", "10000")
 
 # Clone Info :-
 CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
