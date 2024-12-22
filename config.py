@@ -19,7 +19,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "7754653939:AAFVaBD-Yfwu2Gxst6q38Cfw1aPbGO9
 AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002099692683 -1002221437806').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
      
 PICS = (environ.get('PICS', 'https://envs.sh/nL2.jpg https://envs.sh/nRe.jpg https://envs.sh/nRi.jpg https://envs.sh/nRu.jpeg https://envs.sh/nRP.jpg https://envs.sh/nRw.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1740287480 5192808332').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1740287480 5192808332 7428552084').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "FileStoreRooBot") # without @
 PORT = environ.get("PORT", "10000")
 
